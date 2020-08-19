@@ -1,0 +1,51 @@
+Quartus Prime Archive log --	C:/Users/mae1.TD-EF/Desktop/Lab1Demo/bad_collision.qarlog
+
+Archive:	C:/Users/mae1.TD-EF/Desktop/Lab1Demo/bad_collision.qar
+Date:		Wed Dec 05 15:11:17 2018
+Quartus Prime		17.0.0 Build 595 04/25/2017 SJ Standard Edition
+
+	=========== Files Selected: ===========
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/DE10_Standard_Audio.sdc
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/Lab1Demo.qpf
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/Lab1Demo.qsf
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/RTL/MSS/SinTable.sv
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/RTL/MSS/TOP_MSS_DEMO.bdf
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/RTL/MSS/addr_counter.sv
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/RTL/MSS/data_conversion.sv
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/RTL/MSS/prescaler.sv
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/RTL/MSS/volume_counter.sv
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/RTL/Seg7/SEG7.SV
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/RTL/VGA/TOP_VGA_DEMO.bdf
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/RTL/VGA/VGA_Controller.sv
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/RTL/VGA/back_ground_draw.sv
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/RTL/VGA/objects_mux.sv
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/RTL/VGA/player_move.sv
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/RTL/VGA/player_object.sv
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/RTL/VGA/stp1.stp
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/RTL/audio_codec_controller/audio_codec_controller.qxp
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/TOP_KBD_DEMO.bdf
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/TOP_Lab1_DEMO.bdf
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/assignment_defaults.qdf
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/ball_move.sv
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/ball_object.sv
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/bitrec.sv
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/byterec.sv
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/db/stp1_auto_stripped.stp
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/double_ball_object.sv
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/freqcontrol_bb.v
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/game_controller.sv
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/gate_object.sv
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/goal_object.sv
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/hit.sv
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/kbd_cmd_decoder.sv
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/kbd_interface.sv
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/lpf.sv
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/output_files/Waveform.vwf
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/output_files/stp1.stp
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/output_files/stp2.stp
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/pin.tcl
+C:/Users/mae1.TD-EF/Desktop/Lab1Demo/random.sv
+	======= Total: 40 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

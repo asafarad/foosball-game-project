@@ -1,0 +1,96 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/LAB_Hashmal/Lab1Demo/simulation/qsim
+vgame_controller
+Z1 !s110 1544534359
+!i10b 1
+!s100 oVgRG?3UJJgL_D^mnS6g41
+Ic09FV[J@ZOPZ[?`d_73Aj1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1544534358
+Z3 8Lab1Demo.vo
+Z4 FLab1Demo.vo
+Z5 L0 32
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1544534359.000000
+Z8 !s107 Lab1Demo.vo|
+Z9 !s90 -work|work|Lab1Demo.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vgame_controller_vlg_vec_tst
+R1
+!i10b 1
+!s100 A65;?KdmI=f8GPHV5[LAA0
+IniAHS_fTU7<8Cf_cc8o8@3
+R2
+R0
+w1544534356
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+Z12 L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R10
+R11
+vTOP_Lab1_DEMO
+Z13 !s110 1544533603
+!i10b 1
+!s100 OcNSEGjKR0]aTJHKH=3F13
+IXLNnc9kR@bGe>?iV??V503
+R2
+R0
+w1544533600
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+!s108 1544533601.000000
+R8
+R9
+!i113 1
+R10
+R11
+n@t@o@p_@lab1_@d@e@m@o
+vTOP_Lab1_DEMO_vlg_vec_tst
+R13
+!i10b 1
+!s100 [nP7@=dKk_;biO]Sem^5]0
+I>OTaNaONjB4NOloPji4Ja0
+R2
+R0
+w1544533596
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+!s108 1544533603.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@t@o@p_@lab1_@d@e@m@o_vlg_vec_tst

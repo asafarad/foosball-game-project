@@ -1,0 +1,144 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Intel and sold by Intel or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "12/11/2018 15:19:15"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          game_controller
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module game_controller_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg CLK;
+reg Max_goal;
+reg RESETn;
+reg double_ball;
+reg game_over;
+reg goal;
+reg space;
+// wires                                               
+wire double_ball_ena;
+wire game_over_ena;
+wire goal_ena;
+wire [3:0] init_count;
+wire move;
+
+// assign statements (if any)                          
+game_controller i1 (
+// port map - connection between master ports and signals/registers   
+	.CLK(CLK),
+	.Max_goal(Max_goal),
+	.RESETn(RESETn),
+	.double_ball(double_ball),
+	.double_ball_ena(double_ball_ena),
+	.game_over(game_over),
+	.game_over_ena(game_over_ena),
+	.goal(goal),
+	.goal_ena(goal_ena),
+	.init_count(init_count),
+	.move(move),
+	.space(space)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// CLK
+always
+begin
+	CLK = 1'b0;
+	CLK = #5000 1'b1;
+	#5000;
+end 
+
+// RESETn
+initial
+begin
+	RESETn = 1'b1;
+	RESETn = #30000 1'b0;
+	RESETn = #10000 1'b1;
+end 
+
+// space
+initial
+begin
+	space = 1'b0;
+	space = #60000 1'b1;
+	space = #10000 1'b0;
+	space = #90000 1'b1;
+	space = #10000 1'b0;
+	space = #80000 1'b1;
+	space = #10000 1'b0;
+	space = #100000 1'b1;
+	space = #10000 1'b0;
+	space = #100000 1'b1;
+	space = #10000 1'b0;
+	space = #30000 1'b1;
+	space = #10000 1'b0;
+	space = #120000 1'b1;
+	space = #10000 1'b0;
+	space = #30000 1'b1;
+	space = #10000 1'b0;
+	space = #160000 1'b1;
+	space = #10000 1'b0;
+end 
+
+// goal
+initial
+begin
+	goal = 1'b0;
+	goal = #120000 1'b1;
+	goal = #10000 1'b0;
+	goal = #200000 1'b1;
+	goal = #10000 1'b0;
+	goal = #380000 1'b1;
+	goal = #10000 1'b0;
+end 
+
+// double_ball
+initial
+begin
+	double_ball = 1'b0;
+	double_ball = #210000 1'b1;
+	double_ball = #10000 1'b0;
+end 
+
+// Max_goal
+initial
+begin
+	Max_goal = 1'b0;
+	Max_goal = #790000 1'b1;
+	Max_goal = #10000 1'b0;
+end 
+
+// game_over
+initial
+begin
+	game_over = 1'b0;
+	game_over = #580000 1'b1;
+	game_over = #10000 1'b0;
+end 
+endmodule
+

@@ -1,0 +1,95 @@
+// (c) Technion IIT, Department of Electrical Engineering 2018 
+// Written By David Bar-On  June 2018 
+
+
+module kbd_cmd_decoder 	
+ ( 
+   input	   logic  clk,
+	input	   logic  resetN, 
+   input  logic [8:0]	key_Pressed,	
+   input  logic 	make,	
+   input  logic 	brakee,  // warning break is a reserved word 
+	
+   output  logic 	ball_toggle, // presing enter key valid for one clock 
+   output  logic [3:0]	IR_key,	// last key  [0..9]  
+   output  logic 	ir_write,	// valid while key [0..9] is pressed
+   output  logic 	sound_on,	 // presing space valid while key is presed (from make to brake)  
+	output  logic  up_direction,     //player 1 keys
+	output  logic  down_direction,
+	output  logic  right_direction,     
+	output  logic  left_direction,
+	output  logic  up2_direction,    //player 2 keys
+	output  logic  down2_direction,
+	output  logic  right2_direction,     //player 1 keys
+	output  logic  left2_direction
+  	 
+  ) ;
+
+
+   localparam KEY_SPACE = 9'h029 ; 
+   localparam KEY_ENTER = 9'h05A ; 
+
+   localparam KEY_UP1 = 9'he175 ; 
+   localparam KEY_DOWN1 = 9'he172 ; 
+   localparam KEY_RIGHT1 = 9'h174 ; 
+   localparam KEY_LEFT1 = 9'h16B ; 
+   localparam KEY_UP2 = 9'h01d ; 
+   localparam KEY_DOWN2 = 9'h01b ; 
+   localparam KEY_RIGHT2 = 9'h01c ; 
+   localparam KEY_LEFT2 = 9'h023 ; 
+   //localparam KEY_9 = 9'h046 ; 
+   //localparam KEY_0 = 9'h045 ; 
+	
+	logic enter_pressed_d , enter_pressed ; //  _d == delay of one clock 
+ 
+  
+	always_ff @(posedge clk or negedge resetN)
+	begin: fsm_sync_proc
+		if (resetN == 1'b0) begin 
+			IR_key <= 4'b0000 ; 	
+			ir_write	 <= 0 ; 
+			sound_on	 <= 0 ; 
+			enter_pressed_d <= 0  ; 
+			enter_pressed  <= 0 ; 
+			ball_toggle <= 0 ;
+ 
+		end 
+		else begin 
+		
+		IR_key <= 4'b0000;
+
+// keys logic 
+
+		 //if (key_Pressed  == KEY_UP1 ) begin IR_key <= 4'h1 ; if (make == 1'b1) ir_write <= 1'b1 ; if (brakee == 1'b1) ir_write <= 1'b0 ; end ; 
+		 //if (key_Pressed  == KEY_DOWN1 ) begin IR_key <= 4'h2 ; if (make == 1'b1) ir_write <= 1'b1 ; if (brakee == 1'b1) ir_write <= 1'b0 ; end ; 
+		 //if (key_Pressed  == KEY_2 ) begin IR_key <= 4'h2 ; if (make == 1'b1) ir_write <= 1'b1 ; if (brakee == 1'b1) ir_write <= 1'b0 ; end ; 
+		 //if (key_Pressed  == KEY_3 ) begin IR_key <= 4'h3 ; if (make == 1'b1) ir_write <= 1'b1 ; if (brakee == 1'b1) ir_write <= 1'b0 ; end ; 
+		 //if (key_Pressed  == KEY_4 ) begin IR_key <= 4'h4 ; if (make == 1'b1) ir_write <= 1'b1 ; if (brakee == 1'b1) ir_write <= 1'b0 ; end ; 
+		 //if (key_Pressed  == KEY_5 ) begin IR_key <= 4'h5 ; if (make == 1'b1) ir_write <= 1'b1 ; if (brakee == 1'b1) ir_write <= 1'b0 ; end ; 
+		 //if (key_Pressed  == KEY_6 ) begin IR_key <= 4'h6 ; if (make == 1'b1) ir_write <= 1'b1 ; if (brakee == 1'b1) ir_write <= 1'b0 ; end ; 
+		 //if (key_Pressed  == KEY_7 ) begin IR_key <= 4'h7 ; if (make == 1'b1) ir_write <= 1'b1 ; if (brakee == 1'b1) ir_write <= 1'b0 ; end ; 
+		 //if (key_Pressed  == KEY_8 ) begin IR_key <= 4'h8 ; if (make == 1'b1) ir_write <= 1'b1 ; if (brakee == 1'b1) ir_write <= 1'b0 ; end ; 
+		 //if (key_Pressed  == KEY_9 ) begin IR_key <= 4'h9 ; if (make == 1'b1) ir_write <= 1'b1 ; if (brakee == 1'b1) ir_write <= 1'b0 ; end ; 
+		 
+		 if (key_Pressed  == KEY_SPACE ) begin  if (make == 1'b1) sound_on <= 1'b1 ; if (brakee == 1'b1) sound_on <= 1'b0 ; end ; 
+		 if (key_Pressed  == KEY_UP1 ) begin  if (make == 1'b1) up_direction <= 1'b1 ; if (brakee == 1'b1) up_direction <= 1'b0 ; end ; 
+		 if (key_Pressed  == KEY_DOWN1 ) begin  if (make == 1'b1) down_direction <= 1'b1 ; if (brakee == 1'b1) down_direction <= 1'b0 ; end ; 
+		 if (key_Pressed  == KEY_RIGHT1 ) begin  if (make == 1'b1) right_direction <= 1'b1 ; if (brakee == 1'b1) right_direction <= 1'b0 ; end ; 
+		 if (key_Pressed  == KEY_LEFT1 ) begin  if (make == 1'b1) left_direction <= 1'b1 ; if (brakee == 1'b1) left_direction <= 1'b0 ; end ;
+		 
+		 if (key_Pressed  == KEY_UP2 ) begin  if (make == 1'b1) up2_direction <= 1'b1 ; if (brakee == 1'b1) up2_direction <= 1'b0 ; end ; 
+		 if (key_Pressed  == KEY_DOWN2 ) begin  if (make == 1'b1) down2_direction <= 1'b1 ; if (brakee == 1'b1) down2_direction <= 1'b0 ; end ;
+ 		 if (key_Pressed  == KEY_ENTER ) begin  if (make == 1'b1) enter_pressed <= 1'b1 ; if (brakee == 1'b1) enter_pressed <= 1'b0 ; end ;
+		 if (key_Pressed  == KEY_RIGHT2 ) begin  if (make == 1'b1) right2_direction <= 1'b1 ; if (brakee == 1'b1) right2_direction <= 1'b0 ; end ; 
+		 if (key_Pressed  == KEY_LEFT2 ) begin  if (make == 1'b1) left2_direction <= 1'b1 ; if (brakee == 1'b1) left2_direction <= 1'b0 ; end ;
+		 
+		 enter_pressed_d  <= enter_pressed ; // delay of one clock 
+ 	    ball_toggle = (( enter_pressed_d == 1'b0 ) && ( enter_pressed == 1'b1 )) ? ~ball_toggle : ball_toggle ; // swap on rising edge 
+
+ 	end // if 
+	end // always_ff 
+	
+
+endmodule
+
+

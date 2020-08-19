@@ -1,0 +1,107 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 240 176)
+	(text "TOP_KBD_DEMO" (rect 5 0 107 19)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 139 24 156)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CLOCK2_50" (rect 0 0 73 19)(font "Intel Clear" (font_size 8)))
+		(text "CLOCK2_50" (rect 21 27 94 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "resetN" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "resetN" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "PS2_DAT" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
+		(text "PS2_DAT" (rect 21 59 78 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "PS2_CLK" (rect 0 0 55 19)(font "Intel Clear" (font_size 8)))
+		(text "PS2_CLK" (rect 21 75 76 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "space" (rect 0 0 34 19)(font "Intel Clear" (font_size 8)))
+		(text "space" (rect 169 27 203 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 224 32)(pt 208 32))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "up_direction" (rect 0 0 74 19)(font "Intel Clear" (font_size 8)))
+		(text "up_direction" (rect 129 43 203 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 224 48)(pt 208 48))
+	)
+	(port
+		(pt 224 64)
+		(output)
+		(text "down_direction" (rect 0 0 90 19)(font "Intel Clear" (font_size 8)))
+		(text "down_direction" (rect 113 59 203 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 224 64)(pt 208 64))
+	)
+	(port
+		(pt 224 80)
+		(output)
+		(text "right_direction" (rect 0 0 86 19)(font "Intel Clear" (font_size 8)))
+		(text "right_direction" (rect 117 75 203 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 224 80)(pt 208 80))
+	)
+	(port
+		(pt 224 96)
+		(output)
+		(text "up2_direction" (rect 0 0 82 19)(font "Intel Clear" (font_size 8)))
+		(text "up2_direction" (rect 121 91 203 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 224 96)(pt 208 96))
+	)
+	(port
+		(pt 224 112)
+		(output)
+		(text "down2_direction" (rect 0 0 99 19)(font "Intel Clear" (font_size 8)))
+		(text "down2_direction" (rect 104 107 203 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 224 112)(pt 208 112))
+	)
+	(port
+		(pt 224 128)
+		(output)
+		(text "right2_direction" (rect 0 0 94 19)(font "Intel Clear" (font_size 8)))
+		(text "right2_direction" (rect 109 123 203 142)(font "Intel Clear" (font_size 8)))
+		(line (pt 224 128)(pt 208 128))
+	)
+	(drawing
+		(rectangle (rect 16 16 208 144))
+	)
+)

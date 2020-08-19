@@ -1,0 +1,33 @@
+
+
+module goals_counter #(
+      
+	// External Parameters Block
+   parameter Nbits = 4       // Counter's number of bits 
+   ) 
+	(
+   // Input, Output Ports
+   input logic clk, resetN, ena, loadN
+   output logic [Nbits-1:0] count = 0
+   );
+	
+	// Internal or local parameters declarations
+	localparam logic [Nbits-1:0] MaxCount = 2**Nbits-1; // Maximum counter value
+	
+   always_ff @( posedge clk or negedge resetN )
+   begin
+      
+      if ( !resetN ) // Asynchronic reset
+			
+			count <= 99;
+		
+      else 				// Synchronic logic			
+			
+			if (count >= MaxCount) begin
+				count <= 0;
+			end
+			else 
+				count <= count + 1;
+			
+    end // always
+endmodule

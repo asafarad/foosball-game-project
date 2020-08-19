@@ -1,0 +1,115 @@
+Restore Archived Project report for Lab1Demo
+Wed Dec 05 15:12:03 2018
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Wed Dec 05 15:12:03 2018 ;
+; Revision Name                   ; Lab1Demo                              ;
+; Top-level Entity Name           ; TOP_Lab1_DEMO                         ;
+; Family                          ; Cyclone V                             ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/Users/mae1.TD-EF/Desktop/Lab1Demo/5-12-18-13-36.qar' into the 'C:\\Users\\mae1.TD-EF\\Desktop\\Lab1Demo/' directory
+Info: Generated report 'Lab1Demo.restore.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga/17.0/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 669 megabytes
+    Info: Processing ended: Wed Dec 05 15:12:03 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++-------------------------------------------------------+
+; Files Restored                                        ;
++-------------------------------------------------------+
+; File Name                                             ;
++-------------------------------------------------------+
+; qar_info.json                                         ;
+; DE10_Standard_Audio.sdc                               ;
+; Lab1Demo.qpf                                          ;
+; Lab1Demo.qsf                                          ;
+; RTL/MSS/SinTable.sv                                   ;
+; RTL/MSS/TOP_MSS_DEMO.bdf                              ;
+; RTL/MSS/addr_counter.sv                               ;
+; RTL/MSS/data_conversion.sv                            ;
+; RTL/MSS/prescaler.sv                                  ;
+; RTL/MSS/volume_counter.sv                             ;
+; RTL/Seg7/SEG7.SV                                      ;
+; RTL/VGA/TOP_VGA_DEMO.bdf                              ;
+; RTL/VGA/VGA_Controller.sv                             ;
+; RTL/VGA/back_ground_draw.sv                           ;
+; RTL/VGA/objects_mux.sv                                ;
+; RTL/VGA/player_move.sv                                ;
+; RTL/VGA/player_object.sv                              ;
+; RTL/VGA/stp1.stp                                      ;
+; RTL/audio_codec_controller/audio_codec_controller.qxp ;
+; TOP_KBD_DEMO.bdf                                      ;
+; TOP_Lab1_DEMO.bdf                                     ;
+; assignment_defaults.qdf                               ;
+; ball_move.sv                                          ;
+; ball_object.sv                                        ;
+; bitrec.sv                                             ;
+; byterec.sv                                            ;
+; db/stp1_auto_stripped.stp                             ;
+; double_ball_object.sv                                 ;
+; freqcontrol_bb.v                                      ;
+; game_controller.sv                                    ;
+; gate_object.sv                                        ;
+; goal_object.sv                                        ;
+; hit.sv                                                ;
+; kbd_cmd_decoder.sv                                    ;
+; kbd_interface.sv                                      ;
+; lpf.sv                                                ;
+; output_files/Waveform.vwf                             ;
+; output_files/stp1.stp                                 ;
+; output_files/stp2.stp                                 ;
+; pin.tcl                                               ;
+; random.sv                                             ;
++-------------------------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+

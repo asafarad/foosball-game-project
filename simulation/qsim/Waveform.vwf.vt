@@ -1,0 +1,110 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Intel and sold by Intel or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "12/11/2018 15:06:36"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          TOP_Lab1_DEMO
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module TOP_Lab1_DEMO_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg AUD_ADCDAT;
+reg treg_AUD_ADCLRCK;
+reg treg_AUD_BCLK;
+reg treg_AUD_DACLRCK;
+reg treg_AUD_I2C_SDAT;
+reg CLOCK_50;
+reg PS2_CLK;
+reg PS2_DAT;
+reg resetN;
+// wires                                               
+wire AUD_ADCLRCK;
+wire AUD_BCLK;
+wire AUD_DACDAT;
+wire AUD_DACLRCK;
+wire AUD_I2C_SCLK;
+wire AUD_I2C_SDAT;
+wire AUD_XCK;
+wire [6:0] HEX0;
+wire [6:0] HEX2;
+wire [6:0] HEX4;
+wire [6:0] HEX5;
+wire MICROPHON_LED;
+wire [7:0] VGA_B;
+wire VGA_BLANK_N;
+wire VGA_CLK;
+wire [7:0] VGA_G;
+wire VGA_HS;
+wire [7:0] VGA_R;
+wire VGA_SYNC_N;
+wire VGA_VS;
+
+// assign statements (if any)                          
+assign AUD_ADCLRCK = treg_AUD_ADCLRCK;
+assign AUD_BCLK = treg_AUD_BCLK;
+assign AUD_DACLRCK = treg_AUD_DACLRCK;
+assign AUD_I2C_SDAT = treg_AUD_I2C_SDAT;
+TOP_Lab1_DEMO i1 (
+// port map - connection between master ports and signals/registers   
+	.AUD_ADCDAT(AUD_ADCDAT),
+	.AUD_ADCLRCK(AUD_ADCLRCK),
+	.AUD_BCLK(AUD_BCLK),
+	.AUD_DACDAT(AUD_DACDAT),
+	.AUD_DACLRCK(AUD_DACLRCK),
+	.AUD_I2C_SCLK(AUD_I2C_SCLK),
+	.AUD_I2C_SDAT(AUD_I2C_SDAT),
+	.AUD_XCK(AUD_XCK),
+	.CLOCK_50(CLOCK_50),
+	.HEX0(HEX0),
+	.HEX2(HEX2),
+	.HEX4(HEX4),
+	.HEX5(HEX5),
+	.MICROPHON_LED(MICROPHON_LED),
+	.PS2_CLK(PS2_CLK),
+	.PS2_DAT(PS2_DAT),
+	.resetN(resetN),
+	.VGA_B(VGA_B),
+	.VGA_BLANK_N(VGA_BLANK_N),
+	.VGA_CLK(VGA_CLK),
+	.VGA_G(VGA_G),
+	.VGA_HS(VGA_HS),
+	.VGA_R(VGA_R),
+	.VGA_SYNC_N(VGA_SYNC_N),
+	.VGA_VS(VGA_VS)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// resetN
+initial
+begin
+	resetN = 1'b1;
+	resetN = #30000 1'b0;
+	resetN = #10000 1'b1;
+end 
+endmodule
+

@@ -1,0 +1,118 @@
+//-- Alex Grinshpun Apr 2017
+//-- Dudy Nov 13 2017
+// SystemVerilog version Alex Grinshpun May 2018
+
+
+module	ball_move	(	
+//		--////////////////////	Clock Input	 	////////////////////	
+					input		logic	CLK,
+					input		logic	RESETn,
+					input		logic	timer_done,
+					input		logic	collision,
+					input		logic	doubleball,
+					input		logic	goal,
+					input    logic X_direction,
+					input    logic Y_direction,					
+					output	logic	[10:0]	ObjectStartX,
+					output	logic	[10:0]	ObjectStartY
+					
+);
+
+//
+const int StartX = 319;
+const int StartY = 239;
+const int	x_frame	=	639;
+const int	y_frame	=	479;
+int directionX = -2;
+int directionY = -2;
+int coll_flag = 0;
+int db_flag= 0;
+int goal_flag = 0;
+
+
+
+always_ff@(posedge CLK or negedge RESETn)
+begin
+	if(!RESETn)
+	begin
+		ObjectStartX	<= StartX;
+		ObjectStartY	<= StartY;
+	end
+	else 
+	begin
+			
+			if (collision && !coll_flag) begin
+				directionX <= -directionX;
+				coll_flag <= 1;				
+				if ( Y_direction  && !X_direction) begin
+					ObjectStartY <= ObjectStartY - 3;
+					directionY <= -directionY;
+				end
+				if ( Y_direction  && X_direction) begin
+					ObjectStartY <= ObjectStartY + 3;
+					directionY <= -directionY;
+				end
+				if ( !Y_direction  && !X_direction) begin
+					ObjectStartY <= ObjectStartY;
+					directionY <= directionY;
+				end
+			end
+			else if (doubleball && !db_flag) begin
+					db_flag <= 1;
+					ObjectStartX	<= StartX;
+					ObjectStartY	<= StartY;
+			end
+			else if (goal && !goal_flag) begin
+					goal_flag <= 1;
+					ObjectStartX	<= StartX;
+					ObjectStartY	<= StartY;
+			end
+			
+			else if (timer_done == 1'b1) begin
+							
+							if (ObjectStartX <= 0 || ObjectStartX >= x_frame || ObjectStartY <= 0 || ObjectStartY >= y_frame)  begin
+								ObjectStartX <= StartX;
+								ObjectStartY <= StartY;
+							end
+			
+
+							else if (coll_flag)
+								coll_flag <= 0;
+							else if (db_flag)
+								db_flag <= 0;
+							else if (goal_flag)
+								goal_flag <= 0;
+							else if (ObjectStartY <= 5) begin 
+								ObjectStartY <= ObjectStartY + 2;
+								ObjectStartX <= ObjectStartX;
+								directionY <= -directionY;
+							end
+							else if (ObjectStartY >= y_frame - 30) begin
+								ObjectStartY <= ObjectStartY - 2;
+								ObjectStartX <= ObjectStartX;
+								directionY <= -directionY;
+							end	
+							else if (ObjectStartX <= 4) begin 
+								ObjectStartX <= ObjectStartX + 2;
+								ObjectStartY <= ObjectStartY;
+								directionX <= -directionX;
+							end
+							else if (ObjectStartX >= x_frame - 31) begin
+								ObjectStartX <= ObjectStartX - 2;
+								ObjectStartY <= ObjectStartY;
+								directionX <= -directionX;
+							end
+								
+							else begin
+									ObjectStartX  <= ObjectStartX + directionX; 
+									ObjectStartY	<= ObjectStartY + directionY;  
+
+								end
+			end
+			
+	end
+end
+
+//
+endmodule
+//

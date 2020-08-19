@@ -1,0 +1,85 @@
+
+
+
+module hit (
+					input		logic	CLK,
+					input		logic	RESETn,
+					input		logic	b_drawing_request,
+					input		logic	p1_drawing_request,
+					input		logic	p2_drawing_request,
+					input		logic	db_drawing_request,
+					input		logic	gate_drawing_request, 
+					input    logic [10:0] bCoord_X,
+					input    logic [10:0] bCoord_Y,
+				   input    logic [10:0] bCoord2_X,
+					input    logic [10:0] bCoord2_Y,
+					output   collision,
+					output   doubleball,
+					output 	goal,
+					output	X_direction,
+					output	Y_direction
+);
+
+localparam  int object_X_size = 60;
+localparam  int object_Y_size = 20;
+
+always_ff@(posedge CLK or negedge RESETn)
+begin
+	if(!RESETn)
+	begin
+			X_direction <= 0;
+			Y_direction <= 0;
+			collision <= 0;
+			doubleball <= 0;
+			goal <= 0;
+	end 
+	else begin
+
+			if ( b_drawing_request && p1_drawing_request && collision < 1) begin
+				collision <= 1;
+				if ( bCoord_Y <= ( object_Y_size / 3 )  ) begin
+					Y_direction <= 1;
+					X_direction <= 0;
+				end
+				else if (bCoord_Y >= ( object_Y_size * (2/3) ) ) begin
+					Y_direction <= 1;
+					X_direction <= 1;
+				end
+				else begin
+					Y_direction <= 0;
+					X_direction <= 0;
+				end
+			end
+			
+			else if ( b_drawing_request && p2_drawing_request) begin
+						collision <= 1;
+				if ( bCoord2_Y <= ( object_Y_size / 3 )  ) begin
+					Y_direction <= 1;
+					X_direction <= 0;
+				end
+				else if (bCoord2_Y >= ( object_Y_size * (2/3) ) ) begin
+					Y_direction <= 1;
+					X_direction <= 1;
+				end
+				else begin
+					Y_direction <= 0;
+					X_direction <= 0;
+				end
+			end
+			
+			else if ( b_drawing_request && db_drawing_request)
+					doubleball <= 1;
+			else if ( b_drawing_request && gate_drawing_request)
+					goal <= 1;
+			else begin
+				collision <= 0;
+				doubleball <= 0;
+				goal <= 0;
+			end
+
+	end
+end
+
+endmodule
+	
+		

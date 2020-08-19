@@ -1,0 +1,9 @@
+Warning (10268): Verilog HDL information at lpf.sv(38): always construct contains both blocking and non-blocking assignments File: C:/LAB_Hashmal/Lab1Demo/lpf.sv Line: 38
+Warning (10268): Verilog HDL information at byterec.sv(87): always construct contains both blocking and non-blocking assignments File: C:/LAB_Hashmal/Lab1Demo/byterec.sv Line: 87
+Warning (10268): Verilog HDL information at bitrec.sv(54): always construct contains both blocking and non-blocking assignments File: C:/LAB_Hashmal/Lab1Demo/bitrec.sv Line: 54
+Warning (10268): Verilog HDL information at player_move.sv(32): always construct contains both blocking and non-blocking assignments File: C:/LAB_Hashmal/Lab1Demo/RTL/VGA/player_move.sv Line: 32
+Warning (10268): Verilog HDL information at ball_move.sv(38): always construct contains both blocking and non-blocking assignments File: C:/LAB_Hashmal/Lab1Demo/ball_move.sv Line: 38
+Info (10281): Verilog HDL Declaration information at game_controller.sv(12): object "idle" differs only in case from object "IDLE" in the same scope File: C:/LAB_Hashmal/Lab1Demo/game_controller.sv Line: 12
+Info (10281): Verilog HDL Declaration information at game_controller.sv(7): object "goal" differs only in case from object "GOAL" in the same scope File: C:/LAB_Hashmal/Lab1Demo/game_controller.sv Line: 7
+Info (10281): Verilog HDL Declaration information at game_controller.sv(9): object "double_ball" differs only in case from object "DOUBLE_BALL" in the same scope File: C:/LAB_Hashmal/Lab1Demo/game_controller.sv Line: 9
+Info (10281): Verilog HDL Declaration information at game_controller.sv(8): object "game_over" differs only in case from object "GAME_OVER" in the same scope File: C:/LAB_Hashmal/Lab1Demo/game_controller.sv Line: 8

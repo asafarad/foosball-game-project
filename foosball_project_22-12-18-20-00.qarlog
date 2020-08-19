@@ -1,0 +1,61 @@
+Quartus Prime Archive log --	C:/LAB_Hashmal/Lab1Demo/foosball_project_22-12-18-20-00.qarlog
+
+Archive:	C:/LAB_Hashmal/Lab1Demo/foosball_project_22-12-18-20-00.qar
+Date:		Sat Dec 22 20:02:52 2018
+Quartus Prime		17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/LAB_Hashmal/Lab1Demo/DE10_Standard_Audio.sdc
+C:/LAB_Hashmal/Lab1Demo/Lab1Demo.qpf
+C:/LAB_Hashmal/Lab1Demo/Lab1Demo.qsf
+C:/LAB_Hashmal/Lab1Demo/RTL/MSS/SinTable.sv
+C:/LAB_Hashmal/Lab1Demo/RTL/MSS/TOP_MSS_DEMO.bdf
+C:/LAB_Hashmal/Lab1Demo/RTL/MSS/addr_counter.sv
+C:/LAB_Hashmal/Lab1Demo/RTL/MSS/data_conversion.sv
+C:/LAB_Hashmal/Lab1Demo/RTL/MSS/prescaler.sv
+C:/LAB_Hashmal/Lab1Demo/RTL/MSS/volume_counter.sv
+C:/LAB_Hashmal/Lab1Demo/RTL/Seg7/SEG7.SV
+C:/LAB_Hashmal/Lab1Demo/RTL/VGA/TOP_VGA_DEMO.bdf
+C:/LAB_Hashmal/Lab1Demo/RTL/VGA/VGA_Controller.sv
+C:/LAB_Hashmal/Lab1Demo/RTL/VGA/back_ground_draw.sv
+C:/LAB_Hashmal/Lab1Demo/RTL/VGA/objects_mux.sv
+C:/LAB_Hashmal/Lab1Demo/RTL/VGA/player_move.sv
+C:/LAB_Hashmal/Lab1Demo/RTL/VGA/player_object.sv
+C:/LAB_Hashmal/Lab1Demo/RTL/VGA/stp1.stp
+C:/LAB_Hashmal/Lab1Demo/RTL/audio_codec_controller/audio_codec_controller.qxp
+C:/LAB_Hashmal/Lab1Demo/TOP_KBD_DEMO.bdf
+C:/LAB_Hashmal/Lab1Demo/TOP_Lab1_DEMO.bdf
+C:/LAB_Hashmal/Lab1Demo/Waveform.vwf
+C:/LAB_Hashmal/Lab1Demo/Waveform1.vwf
+C:/LAB_Hashmal/Lab1Demo/assignment_defaults.qdf
+C:/LAB_Hashmal/Lab1Demo/ball_move.sv
+C:/LAB_Hashmal/Lab1Demo/ball_object.sv
+C:/LAB_Hashmal/Lab1Demo/bitrec.sv
+C:/LAB_Hashmal/Lab1Demo/byterec.sv
+C:/LAB_Hashmal/Lab1Demo/db/stp1_auto_stripped.stp
+C:/LAB_Hashmal/Lab1Demo/double_ball_object.sv
+C:/LAB_Hashmal/Lab1Demo/down_counter.sv
+C:/LAB_Hashmal/Lab1Demo/freqcontrol_bb.v
+C:/LAB_Hashmal/Lab1Demo/game_controller.sv
+C:/LAB_Hashmal/Lab1Demo/game_over_object.sv
+C:/LAB_Hashmal/Lab1Demo/gate_object.sv
+C:/LAB_Hashmal/Lab1Demo/goal_object.sv
+C:/LAB_Hashmal/Lab1Demo/goals_counter.sv
+C:/LAB_Hashmal/Lab1Demo/hexss.bsf
+C:/LAB_Hashmal/Lab1Demo/hexss.sv
+C:/LAB_Hashmal/Lab1Demo/hit.sv
+C:/LAB_Hashmal/Lab1Demo/kbd_cmd_decoder.sv
+C:/LAB_Hashmal/Lab1Demo/kbd_interface.sv
+C:/LAB_Hashmal/Lab1Demo/lpf.sv
+C:/LAB_Hashmal/Lab1Demo/one_sec_counter.sv
+C:/LAB_Hashmal/Lab1Demo/one_sec_counter_sound.sv
+C:/LAB_Hashmal/Lab1Demo/output_files/Waveform.vwf
+C:/LAB_Hashmal/Lab1Demo/output_files/stp1.stp
+C:/LAB_Hashmal/Lab1Demo/output_files/stp2.stp
+C:/LAB_Hashmal/Lab1Demo/pin.tcl
+C:/LAB_Hashmal/Lab1Demo/random.sv
+C:/LAB_Hashmal/Lab1Demo/time_counter.sv
+	======= Total: 50 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
